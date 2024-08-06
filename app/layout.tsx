@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "water ripple",
-  description: "water ripple effects for your projects",
+  description: "water ripple effects for your projects, Made with 🖤",
 };
 
 export default function RootLayout({
