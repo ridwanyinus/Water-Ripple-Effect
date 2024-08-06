@@ -1,5 +1,6 @@
-"use client";
-import RippleEffect from "@/components/RippleEffect";
+import dynamic from "next/dynamic";
+
+const RippleEffect = dynamic(() => import("@/components/RippleEffect"), { ssr: false });
 
 export default function Home() {
   return (
