@@ -1,3 +1,4 @@
+"use client";
 import RippleEffect from "@/components/RippleEffect";
 
 export default function Home() {
