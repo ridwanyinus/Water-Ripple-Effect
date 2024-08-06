@@ -5,10 +5,10 @@ import "jquery.ripples";
 
 interface RippleEffectProps {
   className?: string;
-  children: React.ReactNode;
+  // children: React.ReactNode;
 }
 
-const RippleEffect: React.FC<RippleEffectProps> = ({ className, children }) => {
+const RippleEffect: React.FC<RippleEffectProps> = ({ className }) => {
   useEffect(() => {
     // Initialize jQuery Ripples effect
     $(".ripple-container").ripples({
@@ -18,7 +18,7 @@ const RippleEffect: React.FC<RippleEffectProps> = ({ className, children }) => {
     });
   }, []);
 
-  return <div className={`ripple-container ${className}`}>{children}</div>;
+  return <div className={`ripple-container ${className}`}></div>;
 };
 
 export default RippleEffect;
